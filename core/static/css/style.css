@@ -1,0 +1,42 @@
+body{
+    font-family: 'Roboto mono', monospace;
+    font-weight: bold;
+    margin: 0 auto;
+    background: rgb(59, 102, 44);
+    height: auto;
+    text-align: center;
+    left: 40%;
+    position: absolute;
+    color: white;
+    }
+
+table{
+    text-align: center;
+    color:white;
+    opacity: 0.75;
+    border: 4px black;
+    border-collapse: collapse;
+    padding-bottom: 20px;
+    width: 300px;
+    background: black;
+}
+th, tr, td {
+    border: solid 1px white;
+    color: white;
+    }
+a{
+    color: white;
+}
+
+img{
+    width: 200px;
+}
+
+button{
+    background: black;
+    opacity: 0.75;
+    color: white;
+    font-size: 1.2em;
+    padding: 8px;
+    margin-top: 10%;
+}

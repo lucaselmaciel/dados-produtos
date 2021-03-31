@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Index</h1>
+    <a href="https://www.djangoproject.com/" target="_blank"><img src="{% static 'images/django2.png'%}"></a>
+    <h2>{{  Chave  }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                
+            </tr>
+        </thead>
+    
+    <tbody>
+    {% for pd in produtos %}
+    <tr>
+        <td><a href="{% url 'produto' pd.id %}">{{pd.nome}}</a></td>
+        <td>{{pd.preco}}</td>
+        
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <button onClick='teste()'>Clique</button>
+</body>
+    <script src="{% static 'js/app.js'%}"></script>
+</html>
